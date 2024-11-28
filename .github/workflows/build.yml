@@ -11,27 +11,27 @@ on:
         description: '内核配置文件路径（如果不需要KSU则忽略）/一般默认即可'
         required: false
         type: string
-        default: 'arch/arm64/configs/'
+        default: 'arch/arm64/configs/alioth_defconfig'
       kernel_tag:
-        description: '内核代码分支/Tag'
+        description: '内核代码分支/'
         required: false
         type: string
-        default: 'master'
+        default: 'talon'
       config_name:
-        description: '内核编译配置文件名'
+        description: 'alioth_defconfig'
         required: false
         type: string
-        default: 'alioth_hylab_defconfig'
+        default: 'alioth_defconfig'
       git_url:
         description: '内核仓库地址'
         required: false
         type: string
-        default: 'https://github.com/zfdx123/kernel_xiaomi_alioth.git'
+        default: 'https://github.com/3098009031/rwProc'
       clang_url:
         description: '编译器下载地址'
         required: false
         type: string
-        default: 'https://github.com/XSans0/WeebX-Clang/releases/download/WeebX-Clang-19.0.0git-release/WeebX-Clang-19.0.0git.tar.gz'
+        default: 'https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/refs/tags/android-13.0.0_r13/clang-r450784d/'
 
 jobs:
 
